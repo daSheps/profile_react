@@ -19,13 +19,16 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Boxes</Link>
-          </li>
-          <li>
             <Link to="/scroll">ScrollTrigger</Link>
           </li>
           <li>
+            <Link to="/">Boxes</Link>
+          </li>
+          <li>
             <Link to="/layers">Layers Section</Link>
+          </li>
+          <li>
+            <Link to="/Parallax">Parallax Section</Link>
           </li>
         </ul>
       </nav>

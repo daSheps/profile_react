@@ -5,7 +5,6 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 import Router from './router/Router';
 import Header from './components/Header';
-
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function App() {

@@ -6,19 +6,12 @@ import TransitionComponent from '../components/Transition';
 import Boxes from '../views/Boxes';
 import Scroll from '../views/Scroll';
 import Layers from '../views/Layers';
+import Parallax from '../views/Parallax';
 
 const Router = () => {
   return (
     <TransitionProvider>
       <Routes>
-        <Route
-          index
-          element={
-            <TransitionComponent>
-              <Boxes />
-            </TransitionComponent>
-          }
-        />
         <Route
           path="/scroll"
           element={
@@ -28,10 +21,26 @@ const Router = () => {
           }
         />
         <Route
+          index
+          element={
+            <TransitionComponent>
+              <Boxes />
+            </TransitionComponent>
+          }
+        />
+        <Route
           path="/layers"
           element={
             <TransitionComponent>
               <Layers />
+            </TransitionComponent>
+          }
+        />
+        <Route
+          path="/Parallax"
+          element={
+            <TransitionComponent>
+              <Parallax />
             </TransitionComponent>
           }
         />

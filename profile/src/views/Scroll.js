@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import App from '../App';
+import Cube from '../components/Cube';
 
 export default function Scroll() {
   const main = useRef();
@@ -23,10 +25,12 @@ export default function Scroll() {
       });
     },
     { scope: main }
+    
   );
 
   return (
     <div ref={main}>
+      {/* <Cube /> */}
       <section className="section flex-center column">
         <h2>Basic ScrollTrigger with React</h2>
         <p>Scroll down to see the magic happen!!</p>
